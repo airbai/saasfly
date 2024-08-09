@@ -13,6 +13,8 @@ const dictionaries = {
     import("~/config/dictionaries/ko.json").then((module) => module.default),
   ja: () =>
     import("~/config/dictionaries/ja.json").then((module) => module.default),
+  zht: () =>
+    import("~/config/dictionaries/zht.json").then((module) => module.default),
 };
 
 export const getDictionary = async (locale: Locale) =>

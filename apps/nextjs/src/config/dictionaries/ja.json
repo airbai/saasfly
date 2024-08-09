@@ -1,90 +1,87 @@
 {
   "price": {
-    "title": "安価で透明な価格！",
-    "pricing": "価格設定",
-    "slogan": "全速力でスタート！",
-    "monthly_bill": "月額請求",
-    "annual_bill": "年間請求",
-    "annual_info": "年間請求時に請求されます",
-    "monthly_info": "月額請求時",
+    "title": "リーズナブルで透明な価格設定！",
+    "pricing": "価格",
+    "slogan": "あなたの運命の旅を始めよう！",
+    "monthly_bill": "月額サブスクリプション",
+    "annual_bill": "年間サブスクリプション",
+    "annual_info": "年間割引価格",
+    "monthly_info": "月額請求",
     "mo": "/月",
-    "contact": "サポートチームに連絡するための。",
-    "contact_2": "サブスクリプションをテストしても請求されません。",
+    "contact": "私たちの紫微斗数の専門家にお問い合わせください。",
+    "contact_2": "一度無料でパーミットサービスを体験することができます。",
     "faq": "よくある質問",
-    "faq_detail": "包括的なFAQを探索して、一般的な問い合わせに対する迅速な回答を見つけてください。さらなる支援が必要な場合は、遠慮せずにパーソナライズされたヘルプのために私たちに連絡してください。",
-    "signup": "サインアップ",
+    "faq_detail": "紫微斗数に関する包括的なFAQを参照してください。さらに深い指導が必要な場合は、専門の占星術師にお気軽にご連絡ください。",
+    "signup": "登録",
     "upgrade": "アップグレード",
-    "manage_subscription": "サブスクリプションの管理",
-    "go_to_dashboard": "ダッシュボードへ",
-    "": ""
+    "manage_subscription": "サブスクリプション管理",
+    "go_to_dashboard": "私の命盤を見る"
   },
   "marketing": {
-    "introducing": "Saasfly の紹介",
-    "title": "Saasfly：新たなSaaSプレーヤー？ 新たなSaaSプレーヤー？もっと簡単に。",
-    "sub_title": "SaaSサービス構築のための完全なAll-in-Oneソリューションです。",
-    "get_started": "始める",
-    "view_on_github": "GitHub で見る",
-    "explore_product": "製品を探す",
+    "introducing": "紫微智星の紹介",
+    "title": "AIマスターがあなたの紫微斗数を支援します",
+    "sub_title": "伝統的な紫微斗数と先進のAI技術を組み合わせた包括的な解釈とヒーリング相談",
+    "get_started": "開始する",
+    "view_on_github": "GitHubオープンソースプロジェクト",
+    "explore_product": "サービスを探索する",
     "features": "特徴",
-    "sub_features": "クラウドネイティブ：スタートアップのための技術の簡素化とコスト削減。",
-    "k8s_features": "高速でシンプルな開発",
-    "devops_features": "アプリケーションの簡単なデプロイ",
-    "price_features": "生産環境に対する経済的効率性。",
+    "sub_features": "AI駆動：現代人に精度と便利さを提供する運命の分析。",
+    "k8s_features": "迅速かつ正確なパーミット",
+    "devops_features": "AI支援の深い解釈",
+    "price_features": "個別のヒーリング相談プラン",
     "main_nav_features": "特徴",
     "main_nav_pricing": "価格",
-    "main_nav_products": "製品",
+    "main_nav_products": "サービス",
     "main_nav_blog": "ブログ",
     "main_nav_documentation": "ドキュメンテーション",
     "login": "ログイン",
-    "signup": "サインアップ",
-    "": ""
+    "signup": "登録"
   },
   "login": {
     "back": "戻る",
-    "welcome_back": "おかえりなさい",
-    "signin_title": "アカウントにログインするためのメールを入力してください",
-    "singup_title": "アカウントがまだないですか？今すぐサインアップ。",
-    "signin_email": "メールでログイン",
-    "signin_others": "または続ける",
-    "signup": "サインアップ",
-    "privacy": "メールアドレスとプロフィール画像のみが保存されます。",
-    "signup_github": "Githubでサインアップ",
-    "": ""
+    "welcome_back": "お帰りなさい",
+    "signin_title": "アカウントにログインするには、メールアドレスを入力してください",
+    "singup_title": "アカウントをまだお持ちでないですか？今すぐ登録して運命を探索してください。",
+    "signin_email": "メールアドレスでログイン",
+    "signin_others": "または以下の方法で継続する",
+    "signup": "登録",
+    "privacy": "私たちはあなたのメールアドレスとプロフィール画像のみを保存します。",
+    "signup_github": "GitHubで登録する"
   },
   "common": {
-    "copyright": "著作権 © ${currentYear} Nextify株式会社。全ての権利を保有。",
+    "copyright": "著作権所有 © ${currentYear} 紫微智星。全著作権所有。",
     "dashboard": {
       "main_nav_documentation": "ドキュメンテーション",
-      "main_nav_support": "サポート",
-      "sidebar_nav_clusters": "クラスター",
-      "sidebar_nav_billing": "請求",
+      "main_nav_support": "相談サポート",
+      "sidebar_nav_clusters": "私の命盤",
+      "sidebar_nav_billing": "請求書",
       "sidebar_nav_settings": "設定",
-      "title_text": "クラスターの作成と管理。",
-      "": ""
-    },
-    "": ""
+      "title_text": "あなたの紫微斗数の命盤を表示して管理します。"
+    }
   },
   "business": {
     "k8s": {
-      "new_cluster": "新しいクラスターを作成する",
-      "no_cluster_title": "クラスターが作成されていません",
-      "no_cluster_content": "まだクラスターがありません。クラスターの作成を始めましょう。"
+      "new_cluster": "新しい命盤を生成する",
+      "no_cluster_title": "まだ命盤がありません",
+      "no_cluster_content": "まだ命盤を生成していません。今すぐあなたの運命の旅を始めましょう。"
     },
     "billing": {
       "billing": "請求書",
-      "content": "あなたの購読と請求詳細を管理する",
-      "noSubscription": "どのプランにも登録されていません。",
-      "subscriptionInfo": "現在、<strong>{plan}</strong> プランを利用しています。ご登録のサブスクリプションは <strong>{date}</strong> に更新されます。",
-      "manage_subscription": "サブスクリプションの管理",
+      "content": "サブスクリプションと請求書の詳細を管理します",
+      "noSubscription": "まだサービスプランに加入していません。",
+      "subscriptionInfo": "現在のプランは<strong>{plan}</strong>です。サブスクリプションは<strong>{date}</strong>に更新されます。",
+      "manage_subscription": "サブスクリプション管理",
       "upgrade": "アップグレード"
-    },
-    "": ""
+    }
   },
   "dropdown": {
-    "dashboard": "ダッシュボード",
-    "billing": "請求",
+    "dashboard": "私の命盤",
+    "billing": "請求書",
     "settings": "設定",
-    "sign_out": "サインアウト",
-    "": ""
+    "sign_out": "ログアウト"
+  },
+  "astro_form": {
+    "male": "Male",
+    "female": "Femal"
   }
 }

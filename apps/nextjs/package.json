@@ -15,6 +15,7 @@
     "@dinero.js/currencies": "2.0.0-alpha.14",
     "@formatjs/intl-localematcher": "0.5.4",
     "@hookform/resolvers": "3.3.4",
+    "react-hook-form": "^7.43.1",
     "@next/mdx": "14.2.5",
     "@saasfly/api": "workspace:*",
     "@saasfly/auth": "workspace:*",
@@ -48,7 +49,8 @@
     "@vercel/speed-insights": "1.0.9",
     "posthog-js": "1.105.0",
     "posthog-node": "3.6.2",
-    "fetch-ponyfill": "7.1.0"
+    "fetch-ponyfill": "7.1.0",
+    "@radix-ui/react-radio-group": "next"
   },
   "devDependencies": {
     "@saasfly/eslint-config": "workspace:*",

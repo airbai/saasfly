@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getCurrentUser } from "@saasfly/auth";
 
 import * as Icons from "@saasfly/ui/icons";
 
@@ -16,6 +17,9 @@ import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { Meteor } from "~/types/meteors";
 
+import { Astrologyx } from "../../../components/astrology/astrology"
+import { AstrologyForm } from "../../../components/astrology/astroform"
+
 const meteors_data: Meteor = {
   name: "Join our Discord",
   description:
@@ -24,6 +28,8 @@ const meteors_data: Meteor = {
   url: "https://discord.gg/8SwSX43wnD",
 };
 
+
+
 export default async function IndexPage({
   params: { lang },
 }: {
@@ -31,6 +37,8 @@ export default async function IndexPage({
     lang: Locale;
   };
 }) {
+
+  const user = await getCurrentUser();
   const dict = await getDictionary(lang);
 
   return (
@@ -57,18 +65,20 @@ export default async function IndexPage({
                   {dict.marketing.sub_title ||
                     "Your complete All-in-One solution for building SaaS services."}
                 </span>
-                <TypewriterEffectSmooths />
+                <TypewriterEffectSmooths
+                  prefix={["既"]}
+                  customText="科技又人文"
+                  suffix={["有趣好玩", "还有点准"]}
+                  highlightClassName="text-green-500"
+                />
               </div>
 
               <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
-                <Link href={`${lang}/login`}>
-                  <ShimmerButton className="mx-auto flex justify-center">
-                    <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
-                      {dict.marketing.get_started}
-                    </span>
-                  </ShimmerButton>
-                </Link>
-
+                <AstrologyForm
+                dict= {dict.astro_form}
+                userId={user?.id}
+                />
+{/*
                 <Link href="https://github.com/saasfly/saasfly" target="_blank">
                   <div className="flex h-full items-center justify-center">
                     <Icons.GitHub className="mr-2 h-6 w-6" />
@@ -76,19 +86,17 @@ export default async function IndexPage({
                       {dict.marketing.view_on_github || "View on GitHub"}
                     </span>
                   </div>
-                </Link>
+                </Link>*/}
               </div>
             </div>
           </div>
 
           <div className="hidden h-full w-full xl:block">
             <div className="flex flex-col pt-28">
-              <Meteorss meteor={meteors_data} />
               <div className="mt-4 flex w-full justify-between">
-                <XBlogArticle />
-                <div className="ml-4">
-                  <FeaturesCard />
-                </div>
+              <ShimmerButton className="mx-auto flex justify-center">
+                <Astrologyx />
+                </ShimmerButton>
               </div>
             </div>
           </div>
@@ -137,7 +145,7 @@ export default async function IndexPage({
 
           <div className="w-full overflow-x-hidden">
             <Comments />
-          </div>
+          </div>          
         </div>
       </section>
     </>

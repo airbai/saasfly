@@ -1,0 +1,88 @@
+{
+    "price": {
+      "title": "實惠透明的價格！",
+      "pricing": "價格",
+      "slogan": "開啟您的命運之旅！",
+      "monthly_bill": "月度訂閱",
+      "annual_bill": "年度訂閱",
+      "annual_info": "年付優惠價",
+      "monthly_info": "按月計費",
+      "mo": "/月",
+      "contact": "聯繫我們的紫微斗數專家。",
+      "contact_2": "您可以免費體驗一次排盤服務。",
+      "faq": "常見問題",
+      "faq_detail": "瀏覽我們全面的紫微斗數常見問題解答。如果您需要更深入的指導，請隨時聯繫我們的專業占星師獲取個性化解讀。",
+      "signup": "註冊",
+      "upgrade": "升級",
+      "manage_subscription": "管理訂閱",
+      "go_to_dashboard": "查看我的命盤"
+    },
+    "marketing": {
+      "introducing": "介紹 紫微智星",
+      "title": "讓 AI 大師幫你看紫微斗數",
+      "sub_title": "結合傳統紫微斗數與先進 AI 技術的一站式解讀與療愈咨詢",
+      "get_started": "開始體驗",
+      "view_on_github": "GitHub 開源項目",
+      "explore_product": "探索服務",
+      "features": "特色",
+      "sub_features": "AI 驅動：為現代人提供精確、便捷的命理分析。",
+      "k8s_features": "快速精確的排盤",
+      "devops_features": "AI 輔助深度解讀",
+      "price_features": "個性化療愈咨詢方案",
+      "main_nav_features": "功能",
+      "main_nav_pricing": "價格",
+      "main_nav_products": "服務",
+      "main_nav_blog": "部落格",
+      "main_nav_documentation": "學習資料",
+      "login": "登入",
+      "signup": "註冊"
+    },
+    "login": {
+      "back": "返回",
+      "welcome_back": "歡迎回來",
+      "signin_title": "請輸入您的電子郵件以登入帳戶",
+      "singup_title": "還沒有帳戶？立即註冊開啟您的命運探索。",
+      "signin_email": "使用電子郵件登入",
+      "signin_others": "或使用以下方式繼續",
+      "signup": "註冊",
+      "privacy": "我們僅儲存您的電子郵件和頭像信息。",
+      "signup_github": "使用 Github 註冊"
+    },
+    "common": {
+      "copyright": "版權所有 © ${currentYear} 紫微智星。保留所有權利。",
+      "dashboard": {
+        "main_nav_documentation": "學習資料",
+        "main_nav_support": "咨詢支持",
+        "sidebar_nav_clusters": "我的命盤",
+        "sidebar_nav_billing": "帳單",
+        "sidebar_nav_settings": "設置",
+        "title_text": "查看和管理您的紫微斗數命盤。"
+      }
+    },
+    "business": {
+      "k8s": {
+        "new_cluster": "生成新的命盤",
+        "no_cluster_title": "暫無命盤",
+        "no_cluster_content": "您還沒有生成任何命盤。現在就開始您的命運探索吧。"
+      },
+      "billing": {
+        "billing": "帳單",
+        "content": "管理您的訂閱和帳單詳情",
+        "noSubscription": "您尚未訂閱任何服務計劃。",
+        "subscriptionInfo": "您目前使用的是 <strong>{plan}</strong> 計劃。您的訂閱將於 <strong>{date}</strong> 繼續。",
+        "manage_subscription": "管理訂閱",
+        "upgrade": "升級"
+      }
+    },
+    "dropdown": {
+      "dashboard": "我的命盤",
+      "billing": "帳單",
+      "settings": "設置",
+      "sign_out": "登出"
+    },
+    "astro_form": {
+      "male": "男",
+      "female": "女"
+    }
+  }
+  

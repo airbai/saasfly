@@ -1,90 +1,87 @@
 {
   "price": {
-    "title": "Cheap, transparent prices!",
+    "title": "Affordable and Transparent Pricing!",
     "pricing": "Pricing",
-    "slogan": "Start at full speed !",
-    "monthly_bill": "Monthly Billing",
-    "annual_bill": "Annual Billing",
-    "annual_info": "will be charged when annual",
-    "monthly_info": "when charged monthly",
+    "slogan": "Embark on Your Journey of Destiny!",
+    "monthly_bill": "Monthly Subscription",
+    "annual_bill": "Annual Subscription",
+    "annual_info": "Annual Discounted Price",
+    "monthly_info": "Billed Monthly",
     "mo": "/mo",
-    "contact": "for to contact our support team.",
-    "contact_2": "You can test the subscriptions and won&apos;t be charged.",
-    "faq": "Frequently Asked Questions",
-    "faq_detail": "Explore our comprehensive FAQ to find quick answers to common inquiries. If you need further assistance, don&apos;t hesitate to contact us for personalized help.",
-    "signup": "Sign up",
+    "contact": "Contact Our Zi Wei Dou Shu Experts.",
+    "contact_2": "You can experience one free charting service.",
+    "faq": "FAQ",
+    "faq_detail": "Browse our comprehensive FAQ on Zi Wei Dou Shu. For deeper guidance, feel free to contact our professional astrologers for personalized interpretations.",
+    "signup": "Sign Up",
     "upgrade": "Upgrade",
     "manage_subscription": "Manage Subscription",
-    "go_to_dashboard": "Go to dashboard",
-    "": ""
+    "go_to_dashboard": "View My Birth Chart"
   },
   "marketing": {
-    "introducing": "Introducing Saasfly",
-    "title": "Saasfly: A new SaaS player? Make things easier.",
-    "sub_title": "Your complete All-in-One solution for building SaaS services.",
+    "introducing": "Introducing Zi Wei Zhi Xing",
+    "title": "Let AI Master Help You with Zi Wei Dou Shu",
+    "sub_title": "A comprehensive interpretation and healing consultation combining traditional Zi Wei Dou Shu with advanced AI technology",
     "get_started": "Get Started",
-    "view_on_github": "View on GitHub",
-    "explore_product": "Explore Product",
+    "view_on_github": "GitHub Open Source Project",
+    "explore_product": "Explore Services",
     "features": "Features",
-    "sub_features": "Cloud-native: Simplifying technology and reducing costs for startups.",
-    "k8s_features": "Fast, simple development",
-    "devops_features": "Easy application deployment",
-    "price_features": "Economically efficient for production environments.",
+    "sub_features": "AI-driven: Provides precise and convenient destiny analysis for modern people.",
+    "k8s_features": "Quick and precise charting",
+    "devops_features": "AI-assisted deep interpretations",
+    "price_features": "Personalized healing consultation plans",
     "main_nav_features": "Features",
     "main_nav_pricing": "Pricing",
-    "main_nav_products": "Products",
+    "main_nav_products": "Services",
     "main_nav_blog": "Blog",
     "main_nav_documentation": "Documentation",
-    "login": "Login",
-    "signup": "Sign up",
-    "": ""
+    "login": "Log In",
+    "signup": "Sign Up"
   },
   "login": {
     "back": "Back",
-    "welcome_back": "Welcome back",
-    "signin_title": "Enter your email to log into your account",
-    "singup_title": "Don't have an account? Sign up now.",
+    "welcome_back": "Welcome Back",
+    "signin_title": "Enter your email to log in to your account",
+    "singup_title": "Don't have an account yet? Register now to explore your destiny.",
     "signin_email": "Log in with Email",
     "signin_others": "Or continue with",
-    "signup": "Sign up",
-    "privacy": "only your email and profile picture will be stored.",
-    "signup_github": "Sign Up with Github",
-    "": ""
+    "signup": "Sign Up",
+    "privacy": "We only store your email and profile picture.",
+    "signup_github": "Sign Up with GitHub"
   },
   "common": {
-    "copyright": "Copyright © ${currentYear} Nextify Limited. All rights reserved.",
+    "copyright": "Copyright © ${currentYear} Zi Wei Zhi Xing. All rights reserved.",
     "dashboard": {
       "main_nav_documentation": "Documentation",
-      "main_nav_support": "Support",
-      "sidebar_nav_clusters": "Clusters",
+      "main_nav_support": "Consultation Support",
+      "sidebar_nav_clusters": "My Birth Charts",
       "sidebar_nav_billing": "Billing",
       "sidebar_nav_settings": "Settings",
-      "title_text": "Create and manage clusters."
-    },
-    "": ""
+      "title_text": "View and manage your Zi Wei Dou Shu birth charts."
+    }
   },
   "business": {
     "k8s": {
-      "new_cluster": "New Cluster",
-      "no_cluster_title": "No clusters created",
-      "no_cluster_content": "You don&apos;t have any clusters yet. Start creating cluster. ",
-      "": ""
+      "new_cluster": "Generate New Birth Chart",
+      "no_cluster_title": "No Birth Charts Yet",
+      "no_cluster_content": "You haven't generated any birth charts yet. Start your journey of destiny exploration now."
     },
     "billing": {
       "billing": "Billing",
-      "content": "Manage your subscription and billing details",
-      "noSubscription": "You are not subscribed to any plan. ",
-      "subscriptionInfo": "You are currently on the <strong>{plan}</strong> plan.Your subscription will renew on <strong>{date}</strong>.",
+      "content": "Manage your subscriptions and billing details",
+      "noSubscription": "You haven't subscribed to any service plans yet.",
+      "subscriptionInfo": "You are currently on the <strong>{plan}</strong> plan. Your subscription will renew on <strong>{date}</strong>.",
       "manage_subscription": "Manage Subscription",
-      "upgrade": "upgrade",
-      "": ""
+      "upgrade": "Upgrade"
     }
   },
   "dropdown": {
-    "dashboard": "Dashboard",
+    "dashboard": "My Birth Charts",
     "billing": "Billing",
     "settings": "Settings",
-    "sign_out": "Sign out",
-    "": ""
+    "sign_out": "Sign Out"
+  },
+  "astro_form": {
+    "male": "Male",
+    "female": "Femal"
   }
 }

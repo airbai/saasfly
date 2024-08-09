@@ -1,0 +1,19 @@
+// src/app/[lang]/(marketing)/page.tsx
+
+import React from 'react';
+import { Astrologyx } from "../../../components/astrology/astrology"
+
+export default function AstrologyPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white p-8">
+      <Astrologyx />
+    </div>
+
+
+<section>
+<div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white p-8">
+  <Astrologyx />
+</div>
+</section>
+  );
+}
