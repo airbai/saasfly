@@ -21,17 +21,48 @@ import { toast } from "@saasfly/ui/use-toast";
 import type { Meteor } from "~/types/meteors";
 
 const FormSchema = z.object({
+    /* TODO
     calendarType: z.enum(["solar", "lunar"]),
     birthDate: z.string().min(1, "Birth date is required"),
     timeOfBirth: z.string().min(1, "Time of birth is required"),
     gender: z.enum(["male", "female"]),
     name: z.string().optional(),
-    location: z.string().optional(),
+    location: z.string().optional(),*/
   });
 
-interface AstrologyFormProps {
+  interface AstrologyFormProps {
     userId?: string;
-    dict: Record<string, string>;
+    dict: {
+      step1: {
+        birthDateLabel: string;
+        lunarLabel: string;
+        solarLabel: string;
+        birthDatePlaceholder: string;
+      };
+      step2: {
+        timeOfBirthLabel: string;
+        timeOfBirthPlaceholder: string;
+        timeOptions: Record<string, string>;
+      };
+      step3: {
+        genderLabel: string;
+        maleLabel: string;
+        femaleLabel: string;
+      };
+      step4: {
+        nameLabel: string;
+        namePlaceholder: string;
+      };
+      step5: {
+        locationLabel: string;
+        locationPlaceholder: string;
+      };
+      buttons: {
+        previous: string;
+        next: string;
+        submit: string;
+      };
+    };
   }
 
 export function AstrologyForm({
@@ -104,8 +135,8 @@ export function AstrologyForm({
           <div className="grid grid-cols-2 gap-6">
             <div>
             
-            <Label htmlFor="timeOfBirth">请输入生日</Label><br></br>
-            <span>{dict.lunar}</span>
+            <Label htmlFor="timeOfBirth">{dict.step1.birthDateLabel}</Label><br></br>
+            <span>{dict.step1.lunarLabel}</span>
                 <Switch
                 checked={isLunar}
                 onCheckedChange={toggleLunar}
@@ -113,26 +144,28 @@ export function AstrologyForm({
                 aria-label="calendarType"
                 {...methods.register("calendarType")}
                 />
-                <span>{dict.solar}</span>
+                <span>{dict.step1.solarLabel}</span>
             </div>
 
             <div>
-              <Input placeholder="格式1996-11-21" {...methods.register("birthDate")} />
+              <Input placeholder={dict.step1.birthDatePlaceholder} {...methods.register("birthDate")} />
             </div>
           </div>
         )}
 
         {currentStep === 2 && (
           <div>
-          <Label htmlFor="timeOfBirth">请选择出生时辰</Label>
+          <Label htmlFor="timeOfBirth">{dict.step2.timeOfBirthLabel}</Label>
           <Select {...methods.register("timeOfBirth")}>
             <SelectTrigger>
-              <SelectValue placeholder="选择出生时辰" />
+              <SelectValue placeholder={dict.step2.timeOfBirthPlaceholder} />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="子时">子时 (23:00-1:00)</SelectItem>
-              <SelectItem value="丑时">丑时 (1:00-3:00)</SelectItem>
-              {/* ... other time options ... */}
+              {Object.entries(dict.step2.timeOptions).map(([value, label]) => (
+                <SelectItem key={value} value={value}>
+                  {label}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>
@@ -141,8 +174,8 @@ export function AstrologyForm({
         {currentStep === 3 && (
           <div>
 
-            <Label htmlFor="location">请选择性别</Label>
-            <span>{dict.male}</span>
+            <Label htmlFor="location">{dict.step3.genderLabel}</Label>
+            <span>{dict.step3.maleLabel}</span>
               <Switch
               checked={isMale}
               onCheckedChange={toggleGender}
@@ -150,21 +183,21 @@ export function AstrologyForm({
               aria-label="gender"
               {...methods.register("gender")}
               />
-              <span>{dict.female}</span>
+              <span>{dict.step3.femaleLabel}</span>
           </div>
         )}
 
         {currentStep === 4 && (
           <div>
-            <Label htmlFor="name">请输入姓名</Label>
-            <Input placeholder="输入名字" {...methods.register("name")} />
+            <Label htmlFor="name">{dict.step4.nameLabel}</Label>
+            <Input placeholder={dict.step4.namePlaceholder} {...methods.register("name")} />
           </div>
         )}
 
         {currentStep === 5 && (
           <div>
-            <Label htmlFor="location">请输入出生地</Label>
-            <Input placeholder="输入位置" {...methods.register("location")} />
+            <Label htmlFor="location">{dict.step5.locationLabel}</Label>
+            <Input placeholder={dict.step5.locationPlaceholder} {...methods.register("location")} />
           </div>
         )}
 
@@ -175,14 +208,14 @@ export function AstrologyForm({
             variant="secondary"
             onClick={() => onPreviousClick(setCurrentStep)}
           >
-            上一步
+            {dict.buttons.previous}
           </Button>
           )}
           <Button 
           type="submit"
           onClick={() => console.log("Submit button clicked")}
           >
-            {currentStep === 5 ? '提交' : '下一步'}
+            {currentStep === 5 ? dict.buttons.submit : dict.buttons.next}
           </Button>
         </div>
       </form>

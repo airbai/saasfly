@@ -66,16 +66,16 @@ export default async function IndexPage({
                     "Your complete All-in-One solution for building SaaS services."}
                 </span>
                 <TypewriterEffectSmooths
-                  prefix={["既"]}
-                  customText="科技又人文"
-                  suffix={["有趣好玩", "还有点准"]}
+                  prefix={dict.marketing.slogan.prefix}
+                  customText={dict.marketing.slogan.customText}
+                  suffix={dict.marketing.slogan.suffix}
                   highlightClassName="text-green-500"
                 />
               </div>
 
               <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
                 <AstrologyForm
-                dict= {dict.astro_form}
+                dict= {dict.form}
                 userId={user?.id}
                 />
 {/*
@@ -106,11 +106,13 @@ export default async function IndexPage({
       <section className="hidden h-[100vh] w-full xl:block">
         <div className="flex h-full w-full justify-between px-[220px]">
           <div className="flex w-[60%] flex-col pr-4 pt-40">
-            <WobbleCardShow />
+            <WobbleCardShow params={{lang}} />
           </div>
           <div className="h-full w-[40%]">
             <div className="flex flex-col pl-[120px]">
-              <WordReveal />
+              <WordReveal 
+              textReveal= {dict.common.reveal}
+              />
             </div>
           </div>
         </div>
@@ -120,27 +122,25 @@ export default async function IndexPage({
         <div className="flex h-full w-full justify-between px-[220px]">
           <div className="flex w-[60%] flex-col pr-4 pt-40">
             <div className="px-[120px]">
-              <Questions />
+              <Questions params={{lang}} />
             </div>
           </div>
         </div>
       </section>
 
       <section className="w-full px-8 xl:hidden">
-        <Questions />
+        <Questions params={{lang}} />
       </section>
 
       <section className="w-full px-8 pt-10 sm:px-0 sm:pt-0 md:px-0 md:pt-0 xl:px-0 xl:pt-0">
         <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
           <div>
             <h1 className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
-              What People Are Saying
+              {dict.comments.header}
             </h1>
           </div>
           <div className="mb-6 text-xl dark:text-zinc-100 md:text-xl">
-            Don’t just take our word for it. Here’s what{" "}
-            <span className="font-bold">real people</span> are saying about
-            Saasfly.
+              {dict.comments.description}
           </div>
 
           <div className="w-full overflow-x-hidden">

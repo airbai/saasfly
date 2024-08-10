@@ -5,40 +5,41 @@ const reviews = [
   {
     name: "Jack",
     username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    body: "This AI-powered Zi Wei Dou Shu service has completely transformed my understanding of fate and life planning. It's truly remarkable!",
     img: "https://avatar.vercel.sh/jack",
   },
   {
     name: "Alex",
     username: "@alex",
-    body: "This tool has revolutionized the way our team works.",
+    body: "The AI-driven insights from Zi Wei Dou Shu have revolutionized how we approach personal growth and destiny. This tool is a game-changer!",
     img: "https://avatar.vercel.sh/jill",
   },
   {
     name: "Shamoki",
     username: "@shamoki",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "I’m amazed by how this AI-based Zi Wei Dou Shu interpretation has reshaped my perspective on life planning. It’s incredible!",
     img: "https://avatar.vercel.sh/john",
   },
   {
     name: "王伟",
     username: "@wangwei",
-    body: "这款 SaaS 服务简直是办公利器！我的工作效率提高了很多。",
+    body: "这个AI驱动的紫微斗数服务完全颠覆了我对命运和人生规划的理解。它真的很了不起！",
     img: "https://avatar.vercel.sh/jane",
   },
   {
     name: "김민수",
     username: "@kios",
-    body: "저는 이 SaaS 서비스에 매우 만족하고 있습니다.",
+    body: "이 AI 기반의 紫微斗數 서비스는 제 인생 계획과 운명 해석을 완전히 혁신시켰습니다. 정말 놀랍습니다!",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
     name: "山田太郎",
     username: "@samtimkun",
-    body: "このSaaSサービスには本当に感謝しています。",
+    body: "このAI駆動の紫微斗数サービスは、運命と人生設計に対する私の理解を完全に変えました。素晴らしいです！",
     img: "https://avatar.vercel.sh/james",
   },
 ];
+
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);

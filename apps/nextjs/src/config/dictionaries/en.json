@@ -21,6 +21,11 @@
     "introducing": "Introducing Zi Wei Zhi Xing",
     "title": "Let AI Master Help You with Zi Wei Dou Shu",
     "sub_title": "A comprehensive interpretation and healing consultation combining traditional Zi Wei Dou Shu with advanced AI technology",
+    "slogan": {
+      "prefix": ["Both"],
+      "customText": "Tech Humanities",
+      "suffix": ["Fun Interesting", "Accurate"]
+    },
     "get_started": "Get Started",
     "view_on_github": "GitHub Open Source Project",
     "explore_product": "Explore Services",
@@ -57,7 +62,8 @@
       "sidebar_nav_billing": "Billing",
       "sidebar_nav_settings": "Settings",
       "title_text": "View and manage your Zi Wei Dou Shu birth charts."
-    }
+    },
+    "reveal": "Zi Wei Zhi Xing will revolutionize how you interpret destiny and plan your life."
   },
   "business": {
     "k8s": {
@@ -80,8 +86,81 @@
     "settings": "Settings",
     "sign_out": "Sign Out"
   },
-  "astro_form": {
-    "male": "Male",
-    "female": "Femal"
-  }
+  "questions": {
+    "about": {
+      "trigger": "About Zi Wei Zhi Xing",
+      "content": "The Zi Wei Zhi Xing team is composed of experienced developers and astrological experts, dedicated to combining traditional Zi Wei Dou Shu with modern AI technology to provide users with accurate destiny interpretations and personalized healing advice. After years of research and optimization, we have developed a comprehensive interpretation framework that not only simplifies the analysis process but also provides users with clear guidance on their destiny and effective healing solutions."
+    },
+    "why_ai": {
+      "trigger": "Why Choose AI-Assisted Interpretation?",
+      "content": "AI technology offers powerful data processing and analysis capabilities in astrological analysis, enabling it to quickly identify complex patterns in birth charts and provide more comprehensive and accurate interpretations. With the help of AI, you can better understand your destiny trends and receive targeted advice."
+    },
+    "is_it_for_you": {
+      "trigger": "Is Zi Wei Zhi Xing Right for You?",
+      "content": "If you want to gain deep insights into your destiny and optimize your life planning through personalized advice, then Zi Wei Zhi Xing is the ideal choice for you. Whether you are an astrology enthusiast or someone looking to improve your quality of life through scientific methods, our services will provide indispensable support and guidance. Even if your needs for interpretation are not yet clear, exploring Zi Wei Zhi Xing can help you find the right path for interpretation and healing."
+    }
+  },
+  "wobbleCardShow": {
+    "stayUpToDate": {
+      "header": "Stay Informed",
+      "description": "Discover how our AI-driven Zi Wei Dou Shu insights are redefining fate interpretation and life planning, offering you new perspectives."
+    },
+    "philosophy": {
+      "header": "Our Philosophy",
+      "description": "We believe that combining AI with Zi Wei Dou Shu brings profound insights, guiding you in understanding your destiny and crafting a meaningful life plan."
+    },
+    "streamlineSaaSDevelopment": {
+      "header": "Transform Your Life with AI and Zi Wei Dou Shu",
+      "description": "Our innovative approach leverages AI and Zi Wei Dou Shu to provide unparalleled insights into fate and life planning, helping you navigate and improve your life's journey."
+    }
+  },
+  "comments": {
+    "header": "What Users Are Saying About Zi Wei Dou Shu",
+    "description": "Explore insights from real users and see how Zi Wei Dou Shu's AI-powered interpretations are making a difference."
+  },
+    "form": {
+      "step1": {
+        "birthDateLabel": "Enter Birth Date",
+        "lunarLabel": "Lunar",
+        "solarLabel": "Solar",
+        "birthDatePlaceholder": "Format: YYYY-MM-DD"
+      },
+      "step2": {
+        "timeOfBirthLabel": "Select Time of Birth",
+        "timeOfBirthPlaceholder": "Choose Time of Birth",
+        "timeOptions": {
+          "0": "Early Zi Hour (00:00~01:00)",
+          "1": "Chou Hour (01:00~03:00)",
+          "2": "Yin Hour (03:00~05:00)",
+          "3": "Mao Hour (05:00~07:00)",
+          "4": "Chen Hour (07:00~09:00)",
+          "5": "Si Hour (09:00~11:00)",
+          "6": "Wu Hour (11:00~13:00)",
+          "7": "Wei Hour (13:00~15:00)",
+          "8": "Shen Hour (15:00~17:00)",
+          "9": "You Hour (17:00~19:00)",
+          "10": "Xu Hour (19:00~21:00)",
+          "11": "Hai Hour (21:00~23:00)",
+          "12": "Late Zi Hour (23:00~00:00)"
+        }
+      },
+      "step3": {
+        "genderLabel": "Select Gender",
+        "maleLabel": "Male",
+        "femaleLabel": "Female"
+      },
+      "step4": {
+        "nameLabel": "Enter Name",
+        "namePlaceholder": "Enter Name"
+      },
+      "step5": {
+        "locationLabel": "Enter Birth Place",
+        "locationPlaceholder": "Enter Location"
+      },
+      "buttons": {
+        "previous": "Previous",
+        "next": "Next",
+        "submit": "Submit"
+      }
+    }
 }
