@@ -95,7 +95,7 @@ export function AstrologyForm({
     console.log("Form submitted with data:", data);
     if (currentStep === 5) {
       console.log("Final step reached. Navigating to next page...");
-      router.push('/next-page');
+      router.push('/dashboard/astro');
     } else {
       console.log("Moving to next step...");
       setCurrentStep(prevStep => prevStep + 1);
@@ -213,7 +213,10 @@ export function AstrologyForm({
           )}
           <Button 
           type="submit"
-          onClick={() => console.log("Submit button clicked")}
+          onClick={() => {
+            console.log("Submit button clicked");
+            localStorage.setItem(`userForm_${userId}`, 'completed');
+          }}
           >
             {currentStep === 5 ? dict.buttons.submit : dict.buttons.next}
           </Button>

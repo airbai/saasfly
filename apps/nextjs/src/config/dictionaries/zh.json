@@ -1,4 +1,9 @@
 {
+  "solgan": {
+    "prefix": ["既"],
+    "customText": "科技又人文",
+    "suffix": ["有趣好玩", "还有点准"]
+  },
   "price": {
     "title": "实惠透明的价格！",
     "pricing": "价格",
@@ -21,11 +26,6 @@
     "introducing": "介绍 紫微智星",
     "title": "让 AI 大师帮你看紫微斗数",
     "sub_title": "结合传统紫微斗数与先进 AI 技术的一站式解读与疗愈咨询",
-    "solgan": {
-      "prefix": ["既"],
-      "customText": "科技又人文",
-      "suffix": ["有趣好玩", "还有点准"]
-    },
     "get_started": "开始体验",
     "view_on_github": "GitHub 开源项目",
     "explore_product": "探索服务",
@@ -170,5 +170,4 @@
         "submit": "提交"
       }
     }
-  
 }

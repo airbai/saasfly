@@ -66,9 +66,9 @@ export default async function IndexPage({
                     "Your complete All-in-One solution for building SaaS services."}
                 </span>
                 <TypewriterEffectSmooths
-                  prefix={dict.marketing.slogan.prefix}
-                  customText={dict.marketing.slogan.customText}
-                  suffix={dict.marketing.slogan.suffix}
+                  prefix={dict.slogan.prefix || []}
+                  customText={dict.slogan.customText || "" }
+                  suffix={dict.slogan.suffix || []}
                   highlightClassName="text-green-500"
                 />
               </div>

@@ -21,11 +21,7 @@
       "introducing": "介紹 紫微智星",
       "title": "讓 AI 大師幫你看紫微斗數",
       "sub_title": "結合傳統紫微斗數與先進 AI 技術的一站式解讀與療愈咨詢",
-      "slogan": {
-        "prefix": ["既"],
-        "customText": "科技又人文",
-        "suffix": ["有趣好玩", "還有點準"]
-      },
+
       "get_started": "開始體驗",
       "view_on_github": "GitHub 開源項目",
       "explore_product": "探索服務",
@@ -41,6 +37,11 @@
       "main_nav_documentation": "學習資料",
       "login": "登入",
       "signup": "註冊"
+    },
+    "slogan": {
+      "prefix": ["既"],
+      "customText": "科技又人文",
+      "suffix": ["有趣好玩", "還有點準"]
     },
     "login": {
       "back": "返回",

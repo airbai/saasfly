@@ -21,11 +21,7 @@
     "introducing": "Introducing Zi Wei Zhi Xing",
     "title": "Let AI Master Help You with Zi Wei Dou Shu",
     "sub_title": "A comprehensive interpretation and healing consultation combining traditional Zi Wei Dou Shu with advanced AI technology",
-    "slogan": {
-      "prefix": ["Both"],
-      "customText": "Tech Humanities",
-      "suffix": ["Fun Interesting", "Accurate"]
-    },
+
     "get_started": "Get Started",
     "view_on_github": "GitHub Open Source Project",
     "explore_product": "Explore Services",
@@ -41,6 +37,11 @@
     "main_nav_documentation": "Documentation",
     "login": "Log In",
     "signup": "Sign Up"
+  },
+  "slogan": {
+    "prefix": ["Both"],
+    "customText": "Tech Humanities",
+    "suffix": ["Fun", "Interesting", "Accurate"]
   },
   "login": {
     "back": "Back",

@@ -13,10 +13,10 @@ export const getDashboardConfig = async ({
 
   return {
     mainNav: [
-      {
+      /*{
         title: dict.common.dashboard.main_nav_documentation,
         href: "/docs",
-      },
+      },*/
       {
         title: dict.common.dashboard.main_nav_support,
         href: "/support",

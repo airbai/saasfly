@@ -21,11 +21,7 @@
     "introducing": "紫微智星の紹介",
     "title": "AIマスターがあなたの紫微斗数を支援します",
     "sub_title": "伝統的な紫微斗数と先進のAI技術を組み合わせた包括的な解釈とヒーリング相談",
-    "slogan": {
-      "prefix": ["既"],
-      "customText": "テクノロジーと人文",
-      "suffix": ["面白くて楽しい", "少し正確"]
-    },
+
     "get_started": "開始する",
     "view_on_github": "GitHubオープンソースプロジェクト",
     "explore_product": "サービスを探索する",
@@ -41,6 +37,11 @@
     "main_nav_documentation": "ドキュメンテーション",
     "login": "ログイン",
     "signup": "登録"
+  },    
+  "slogan": {
+    "prefix": ["既"],
+    "customText": "テクノロジーと人文",
+    "suffix": ["面白くて楽しい", "少し正確"]
   },
   "login": {
     "back": "戻る",
