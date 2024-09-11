@@ -1,9 +1,4 @@
 {
-  "solgan": {
-    "prefix": ["既"],
-    "customText": "科技又人文",
-    "suffix": ["有趣好玩", "还有点准"]
-  },
   "price": {
     "title": "实惠透明的价格！",
     "pricing": "价格",
@@ -41,6 +36,11 @@
     "main_nav_documentation": "学习资料",
     "login": "登录",
     "signup": "注册"
+  },
+  "solgan": {
+    "prefix": ["既"],
+    "customText": "科技又人文",
+    "suffix": ["有趣好玩", "还有点准"]
   },
   "login": {
     "back": "返回",

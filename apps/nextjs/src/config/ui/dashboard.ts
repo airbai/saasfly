@@ -24,11 +24,11 @@ export const getDashboardConfig = async ({
       },
     ],
     sidebarNav: [
-      {
+     /* {
         id: "clusters",
         title: dict.common.dashboard.sidebar_nav_clusters,
         href: "/dashboard/",
-      },
+      },*/
       {
         id: "billing",
         title: dict.common.dashboard.sidebar_nav_billing,

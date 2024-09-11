@@ -8,6 +8,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import { cn } from "@saasfly/ui";
 import * as Icons from "@saasfly/ui/icons";
 
+import { siteConfig } from "~/config/site";
 import { MobileNav } from "~/components/mobile-nav";
 import type { MainNavItem } from "~/types";
 
@@ -39,7 +40,7 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
             alt=""
           />
         </div>
-        <div className="text-2xl font-semibold">紫微智星</div>
+        <div className="text-2xl font-semibold">{siteConfig.name}</div>
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">

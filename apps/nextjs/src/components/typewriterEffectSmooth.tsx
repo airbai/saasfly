@@ -15,7 +15,7 @@ interface TypewriterEffectSmoothsProps {
   highlightClassName?: string;
 }
 
-export function TypewriterEffectSmooths({
+export async function TypewriterEffectSmooths({
   prefix = ["Build", "awesome", "apps", "and", "ship", "fast", "with"],
   customText,
   suffix = [],

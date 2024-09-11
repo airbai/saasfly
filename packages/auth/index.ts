@@ -12,6 +12,7 @@ import { MagicLinkEmail, resend, siteConfig } from "@saasfly/common";
 
 import { db } from "./db";
 import { env } from "./env.mjs";
+import { NextResponse } from 'next/server'
 
 type UserId = string;
 type IsAdmin = boolean;

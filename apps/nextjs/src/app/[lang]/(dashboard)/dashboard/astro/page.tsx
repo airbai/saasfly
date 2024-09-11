@@ -1,26 +1,75 @@
-// src/app/astro/page.tsx
+/*import { type Metadata } from 'next'
+import { notFound, redirect } from 'next/navigation'
+import { getCurrentUser } from "@saasfly/auth";
 
-import { redirect } from "next/navigation";
-import { authOptions, getCurrentUser } from "@saasfly/auth";
-import type { Locale } from "~/config/i18n-config";
-import { getDictionary } from "~/lib/get-dictionary";
-import { AstroPageClient } from "~/components/astrology/astroclient";
+import { getChat } from '~/app/actions'
+import { Chat } from '~/components/chat/chat'
 
-export default async function AstroPage({
-    params: { lang },
-  }: {
-    params: {
-      lang: Locale;
-    };
-  }) {
+
+export interface ChatPageProps {
+  params: {
+    id: string
+  }
+}
+
+export async function generateMetadata({
+  params
+}: ChatPageProps): Promise<Metadata> {
   
-    const user = await getCurrentUser();
-    const dict = await getDictionary(lang);
+  const user = await getCurrentUser();
+
   if (!user) {
-    redirect(authOptions?.pages?.signIn ?? "/login");
+    return {}
   }
 
+  const chat = await getChat(params.id, user.id)
+  return {
+    title: chat?.title.slice(0, 50) ?? 'Chat'
+  }
+}
+
+export default async function ChatPage({ params }: ChatPageProps) {
+  const user = await getCurrentUser();
+
+  console.log('user is :' + user?.id)
+  if (!user) {
+    redirect("/login")
+  }
+
+  const chat = await getChat(params.id, user.id)
+
+  if (!chat) {
+    notFound()
+  }
+
+  if (chat?.userId !== user?.id) {
+    notFound()
+  }
+
+  return <Chat id={chat.id} initialMessages={chat.messages} />
+}
+*/
+
+import { nanoid } from '~/lib/utils'
+import { Chat } from '~/components/chat/chat'
+import { AI } from '~/lib/chat/actions'
+//import { auth } from '@/auth'
+import { Session } from '@saasfly/auth'
+import { getMissingKeys } from '~/app/actions'
+import { getServerSession } from "next-auth"
+import { authOptions } from "@saasfly/auth"
+
+
+
+export default async function ChatPage() {
+  const id = nanoid()
+  const session = getServerSession(authOptions)
+  const missingKeys = await getMissingKeys()
+
   return (
-    <AstroPageClient userId={user.id} dict={dict} />
-  );
+
+    <AI initialAIState={{ chatId: id, messages: [] }}>
+          <Chat id={id} session={session} missingKeys={missingKeys} />
+    </AI>
+  )
 }

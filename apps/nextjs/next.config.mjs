@@ -23,7 +23,7 @@ const config = {
   pageExtensions: ["ts", "tsx", "mdx"],
   experimental: {
     mdxRs: true,
-    // serverActions: true,
+    serverActions: true
   },
   images: {
     domains: ["images.unsplash.com", "avatars.githubusercontent.com"],
@@ -32,6 +32,13 @@ const config = {
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
   output: "standalone",
+  webpack: (config) => {
+    config.resolve.fallback = {
+      crypto: require.resolve('crypto-browserify'),
+    };
+
+    return config;
+  },
 };
 
 export default withNextDevtools(withMDX()(config));

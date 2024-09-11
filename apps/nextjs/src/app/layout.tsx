@@ -18,6 +18,9 @@ import { siteConfig } from "~/config/site";
 // import { Suspense } from "react";
 // import { PostHogPageview } from "~/config/providers";
 
+
+import { Providers } from "~/components/chat/providers";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -47,13 +50,14 @@ export const metadata = {
     "Simple ",
     "Easy",
     "Cloud Native",
+    "FiitAI"
   ],
   authors: [
     {
-      name: "saasfly",
+      name: "FiitAI",
     },
   ],
-  creator: "Saasfly",
+  creator: "FiitAI",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -67,7 +71,7 @@ export const metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://show.saasfly.io/"),
+  metadataBase: new URL("https://ziwei.fiit.ai/"),
   // manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
@@ -94,11 +98,19 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
+
+    <Providers
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <NextDevtoolsProvider>{children}</NextDevtoolsProvider>
+    </Providers>
           <Analytics />
           <SpeedInsights />
           <Toaster />
-          <TailwindIndicator />
+          {/*<TailwindIndicator />*/}
         </ThemeProvider>
       </body>
     </html>

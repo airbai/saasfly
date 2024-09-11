@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "ZiweiAI",
+  name: "Ziwei AI",
   description: "We provide an easier way to build saas service in production",
-  url: "https://github.com/saaslfy/saasfly",
+  url: "https://ziwei.fiit.ai/zht",
   ogImage: "",
   links: {
-    github: "https://github.com/saaslfy",
+    github: "#",
   },
 };

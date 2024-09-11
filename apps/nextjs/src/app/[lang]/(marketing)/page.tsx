@@ -16,6 +16,7 @@ import { WordReveal } from "~/components/word-reveal";
 import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { Meteor } from "~/types/meteors";
+import { siteConfig } from "~/config/site";
 
 import { Astrologyx } from "../../../components/astrology/astrology"
 import { AstrologyForm } from "../../../components/astrology/astroform"
@@ -40,14 +41,18 @@ export default async function IndexPage({
 
   const user = await getCurrentUser();
   const dict = await getDictionary(lang);
-
+/*
+  if (!dict.slogan) {
+    return <div>Loading...</div>;
+  }
+*/
   return (
     <>
       <section className="w-full px-8 sm:px-48 md:px-48 xl:h-[100vh] xl:px-48">
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-40 xl:grid-cols-2">
           <div className="flex flex-col items-start">
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
-              <Link href="https://document.saasfly.io" target="_blank">
+              <Link href={siteConfig.url} target="_blank">
                 <DocumentGuide>
                   {dict.marketing.introducing || "Introducing Saasfly"}
                 </DocumentGuide>

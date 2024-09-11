@@ -4,14 +4,19 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "crypto": ["node_modules/crypto-browserify"]
     },
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
   },
   "include": [
     "next-env.d.ts",
